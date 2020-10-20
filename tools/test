@@ -10,7 +10,10 @@ IS_TRAVIS=${TRAVIS:-false}
 
 #start vizier and mimir
 if [ "$NO_VIZIER" != "true" ] ; then
+  echo "------- Starting Vizier & Mimir --------"
   ./tools/vizier test devmimir
+else
+  echo "------- No Vizier & Mimir: $NO_VIZIER --------"
 fi
 
 if [ "$IS_TRAVIS" == "false" ] ; then
