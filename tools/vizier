@@ -19,11 +19,15 @@ if [ ! -d "$STATIC_UI_FILES_DIR" ]
     STATIC_UI_FILES_DIR=${APP_RESOURCES_DIR}web-ui/build/
 fi
 
+echo "------- static files $STATIC_UI_FILES_DIR $APP_RESOURCES_DIR--------"
+ 
+
 MIMIR_DEV="false"
 UI_DEV="false"
 TESTING="false"
 if [ $# -eq 1 ]
   then
+    echo "one params: $1"
     if [ "$1" == "devmimir" ]
       then
         echo "mimir dev mode!"
@@ -39,6 +43,7 @@ if [ $# -eq 1 ]
 fi
 if [ $# -eq 2  ]
   then
+    echo "two params: $1 $2"
     if [ "$1" == "test" ]
       then
         echo "testing mode!"
