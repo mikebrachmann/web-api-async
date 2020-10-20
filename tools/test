@@ -12,7 +12,7 @@ IS_TRAVIS=${TRAVIS:-false}
 if [ "$NO_VIZIER" != "true" ] ; then
   echo "------- Starting Vizier & Mimir --------"
   ./tools/vizier "test" devmimir
-  echo "------- vizier started: is travis: $IS_TRAVIS --------"
+  echo "------- vizier started: is travis: $IS_TRAVIS cwd: $CWD--------"
 else
   echo "------- No Vizier & Mimir: $NO_VIZIER --------"
 fi
