@@ -9,6 +9,9 @@ mkdir -p "$USER_DATA_DIR"
 APP_RESOURCES_DIR=$RUNNER_DIR/../
 STATIC_UI_FILES_DIR=${APP_RESOURCES_DIR}web-ui/build/
 
+echo "------- Starting Vizier $CWD --------"
+  
+
 if [ ! -d "$STATIC_UI_FILES_DIR" ]
   then
     APP_RESOURCES_DIR=$(python3 -m site --user-base)
