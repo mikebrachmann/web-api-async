@@ -16,7 +16,7 @@ echo "------- Starting Vizier $CWD --------"
 
 if [ ! -d "$STATIC_UI_FILES_DIR" ]
   then
-    APP_RESOURCES_DIR=PYTHON_USER_BASE
+    APP_RESOURCES_DIR=$PYTHON_USER_BASE
     APP_RESOURCES_DIR=${APP_RESOURCES_DIR}/
     STATIC_UI_FILES_DIR=${APP_RESOURCES_DIR}web-ui/build/
 fi
